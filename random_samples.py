@@ -17,6 +17,7 @@ if __name__ == '__main__':
     parser.add_argument('--scale_v', type=float, help='vertical resize factor for random samples', default=1)
     opt = parser.parse_args()
     opt = functions.post_config(opt)
+    print(opt)
     Gs = []
     Zs = []
     reals = []
