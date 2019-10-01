@@ -271,6 +271,7 @@ def generate_dir2save(opt):
         dir2save = '%s/edit/%s/%s_out' % (opt.out, opt.input_name[:-4],opt.ref_name[:-4])
     elif opt.mode == 'paint2image':
         dir2save = '%s/paint2image/%s/start_scale=%d/%s_out' % (opt.out, opt.input_name[:-4],opt.paint_start_scale,opt.paint_name[:-4])
+    print('dir2save()={}'.format(dir2save))
     return dir2save
 
 def post_config(opt):
